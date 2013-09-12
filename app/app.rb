@@ -57,4 +57,9 @@ class SmartDiscovery < Padrino::Application
   #     render 'errors/505'
   #   end
   #
+  get "/" do
+    "Welcome to WhiteCollar!!"
+  end
+
+
 end
