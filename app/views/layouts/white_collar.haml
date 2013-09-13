@@ -1,0 +1,8 @@
+!!! Strict
+%html
+  %head
+    %title= [@title, "Padrino Sample Blogs"].compact.join(" | ")
+    = yield_content :include
+  %body
+    #header
+      Copyright (c) 2009-2010 Padrino
