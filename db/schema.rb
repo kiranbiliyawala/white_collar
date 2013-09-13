@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 7) do
+ActiveRecord::Schema.define(:version => 8) do
+
+  create_table "abcd", :id => false, :force => true do |t|
+    t.string "occupation", :limit => 100
+    t.string "productid",  :limit => 20
+  end
+
+  create_table "book_data_dumps", :force => true do |t|
+    t.string "fsn"
+    t.string "title"
+    t.float  "mrp"
+    t.string "mrp_currency"
+    t.float  "fsp"
+    t.string "fsp_currency"
+  end
 
   create_table "fk_user_profiles", :force => true do |t|
     t.string  "fkuid"
