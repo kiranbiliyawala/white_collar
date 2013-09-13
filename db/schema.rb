@@ -11,15 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 6) do
+ActiveRecord::Schema.define(:version => 7) do
 
   create_table "fk_user_profiles", :force => true do |t|
-    t.string   "fkuid"
-    t.string   "name"
-    t.string   "gender"
-    t.datetime "dob"
-    t.string   "city"
-    t.string   "state"
+    t.string  "fkuid"
+    t.string  "name"
+    t.string  "gender"
+    t.string  "city"
+    t.string  "state"
+    t.integer "age"
   end
 
   create_table "flipkart_linkedins", :force => true do |t|
