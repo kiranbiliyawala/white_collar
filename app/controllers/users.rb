@@ -146,13 +146,16 @@ SmartDiscovery.controllers :users do
         end
         fsn_group_count = result[1]
       end
-      if get_standard_deviation(fsn_group_by_count_list) < 0
+      p fsn,get_standard_deviation(fsn_group_by_count_list),get_mean(fsn_group_by_count_list),fsn_group_count,fsn_group_count<get_mean(fsn_group_by_count_list)
+      if get_standard_deviation(fsn_group_by_count_list) < 1 || fsn_group_count.to_f <= get_mean(fsn_group_by_count_list)
         next
       else
-        fsn_score_map[fsn[:fsn]] = fsn_group_count
+        fsn_score = ((60*(fsn_group_count/get_sum(fsn_group_by_count_list)))+(40*(get_standard_deviation(fsn_group_by_count_list)/get_max_standard_deviation(fsn_group_by_count_list))))
+        fsn_score_map[fsn[:fsn]] = fsn_score.round(2)
       end
     end
     p fsn_score_map
+    fsn_score_map = Hash[fsn_score_map.sort_by {|k,v| v}.reverse[0..15]]
     return fsn_score_map.to_json
 
 
