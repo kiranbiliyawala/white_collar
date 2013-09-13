@@ -38,55 +38,51 @@
       }
     :javascript
       function addFilters(){
+      //alert("function called");
         f=document.getElementById("age");
         for( var i = 0; i < f.elements.length; i++ )
          {
-            if(f.elements[i].id == "age_select"){
+            if(f.elements[i].id == "age_select")
               document.getElementById("hdn_age").value=f.elements[i].value;
-              age=document.getElementById("hdn_age").value;
-            }
          }
         f=document.getElementById("occupation");
         for( var i = 0; i < f.elements.length; i++ )
          {
-            if(f.elements[i].id == "occupation_select"){
+            if(f.elements[i].id == "occupation_select")
               document.getElementById("hdn_occupation").value=f.elements[i].value;
-              occupation=document.getElementById("hdn_occupation").value;
-            }
          }
         f=document.getElementById("organisation");
         for( var i = 0; i < f.elements.length; i++ )
          {
-            if(f.elements[i].id == "organisation_select"){
+            if(f.elements[i].id == "organisation_select")
               document.getElementById("hdn_organisation").value=f.elements[i].value;
-              organisation=document.getElementById("hdn_organisation").value;
-            }
          }
         f=document.getElementById("department");
         for( var i = 0; i < f.elements.length; i++ )
          {
-            if(f.elements[i].id == "department_select"){
+            if(f.elements[i].id == "department_select")
               document.getElementById("hdn_department").value=f.elements[i].value;
-              gender=document.getElementById("hdn_department").value;
-            }
          }
         f=document.getElementById("location");
         for( var i = 0; i < f.elements.length; i++ )
          {
-            if(f.elements[i].id == "location_select"){
+            if(f.elements[i].id == "location_select")
               document.getElementById("hdn_location").value=f.elements[i].value;
-              location=document.getElementById("hdn_location").value;
-            }
          }
-         alert("abc" + "pqr");
-        //document.getElementById("form1").action = "http://0.0.0.0:3000/layouts/test?occupation=" + occupation + "&age=" + age + "&organization=" + organisation + "&gender=" + gender + "&location=" + location;
-        alert(document.getElementById("form1").action);
+        //alert("abc" + "pqr");
+        //document.getElementById("form1").action = "http://0.0.0.0:3000/layouts/test?occupation=" + document.getElementById("hdn_occupation").value + "&age=" + document.getElementById("hdn_age").value + "&organization=" + document.getElementById("hdn_organisation").value + "&gender=" + document.getElementById("hdn_department").value + "&location=" + document.getElementById("hdn_location").value;
+        //document.getElementById("form1").action = "http://0.0.0.0:3000/layouts/test"
+        //alert(document.getElementById("form1").action);
         //document.getElementById("btn_filter").click();
+        //$.post('/layouts/test', { job: 'text'});
+        //alert("http://0.0.0.0:3000/layouts/test?occupation=" + document.getElementById("hdn_occupation").value + "&age=" + document.getElementById("hdn_age").value + "&organization=" + document.getElementById("hdn_organisation").value + "&gender=" + document.getElementById("hdn_department").value + "&location=" + document.getElementById("hdn_location").value);
+        window.location = "http://0.0.0.0:3000/layouts/test?occupation=" + document.getElementById("hdn_occupation").value + "&age=" + document.getElementById("hdn_age").value + "&organization=" + document.getElementById("hdn_organisation").value + "&gender=" + document.getElementById("hdn_department").value + "&location=" + document.getElementById("hdn_location").value;
+        //window.location = "http://0.0.0.0:3000/layouts/test";
       }
     %link{:href => "http://img6a.flixcart.com/www/prod/basic-cd05cb9e-nogz.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://img6a.flixcart.com/www/prod/HPS-cbfbc5a7-nogz.css", :rel => "stylesheet", :type => "text/css"}/
   %body
-    %form{:id => "form1", :method => "GET", :action => " "}
+    %form{:id => "form1", :method => "POST"}
       %input{:type => "hidden", :id => "hdn_age", :value => " "}
       %input{:type => "hidden", :id => "hdn_occupation", :value => " "}
       %input{:type => "hidden", :id => "hdn_organisation", :value => " "}
@@ -2730,42 +2726,35 @@
                         .line.header
                           #products.4-per-row{"data-layout" => "grid", "data-storeid" => "4io"}
                             .gd-row.browse-grid-row
-                              - @fsns.each do |fsn|
-                                .gd-col.gu3
-                                  .product-unit.unit-4.browse-product{"data-pid" => "#{fsn}"}
-                                    .pu-visual-section
-                                      %a.pu-image.fk-product-thumb{:href => "/samsung-galaxy-star-s5282/p/itmdh494wzhsfmnp?pid=MOBDH48MF4ZCAFWP&ref=9f2b0010-9ade-434b-9328-ca20a396b7a0"}
-                                        %img{:alt => "Samsung Galaxy Star S5282: Mobile", "data-error-url" => "http://img1a.flixcart.com/mob/thumb/mobile.jpg", :onerror => "img_onerror(this);", :onload => "img_onload(this);", :src => "#{@image_url[fsn]}" }/
-                                    .pu-details.lastUnit
-                                      .pu-title.fk-font-13
-                                        %a.fk-display-block{:href => "/samsung-galaxy-star-s5282/p/itmdh494wzhsfmnp?pid=MOBDH48MF4ZCAFWP&ref=9f2b0010-9ade-434b-9328-ca20a396b7a0", :title => "Samsung Galaxy Star S5282 (Ceramic White)"}
-                                          Samsung Galaxy Star S5282 (Ceramic White)
-                                      .pu-variants.fk-font-11
-                                      .pu-extra.fk-font-11
-                                      .pu-rating
-                                        .fk-stars-small{:title => "3.7 stars"}
-                                          .rating{:style => "width:74%;"}
-                                        (183 ratings)
-                                      .pu-price
-                                        .pu-border-top
-                                          .pu-final
-                                            %span.fk-font-17.fk-bold Rs. 4890
-                                          %ul.pu-offers
-                                          .more-listing-options.fk-smallfont.tpadding5.bpadding5
-                                            %a.fk-underline{:href => "/ps/MOBDH48MF4ZCAFWP"} 8 Sellers
-                                            from
-                                            %span.fk-bold Rs 4790
-                                      .pu-border-top
-                                        %ul.pu-usp
-                                          %li
-                                            %span.text Dual SIM (GSM + GSM)
-                                          %li
-                                            %span.text 2 MP Primary Camera
-                                          %li
-                                            %span.text Android Jelly Bean OS
-                                      .pu-compare.pu-border-top
-                                        %input#MOBDH48MF4ZCAFWP.compare-checkbox{"data-uniqid" => "9f2b0010-9ade-434b-9328-ca20a396b7a0", :display_vertical => "Mobiles", :type => "checkbox", :vertical => "mobile", :vertical_url_map => "/mobiles"}/
-                                        %label.compare-label{:for => "MOBDH48MF4ZCAFWP"} Add to compare
+                              - unless @fsns.nil?
+                                - @fsns.each do |fsn|
+                                  .gd-col.gu3
+                                    .product-unit.unit-4.browse-product{"data-pid" => "#{fsn}"}
+                                      .pu-visual-section
+                                        %a.pu-image.fk-product-thumb{:href => "/samsung-galaxy-star-s5282/p/itmdh494wzhsfmnp?pid=MOBDH48MF4ZCAFWP&ref=9f2b0010-9ade-434b-9328-ca20a396b7a0"}
+                                          %img{:alt => "Samsung Galaxy Star S5282: Mobile", "data-error-url" => "http://img1a.flixcart.com/mob/thumb/mobile.jpg", :onerror => "img_onerror(this);", :onload => "img_onload(this);", :src => "#{@image_url[fsn]}" }/
+                                      .pu-details.lastUnit
+                                        .pu-title.fk-font-13
+                                          %a.fk-display-block{:href => "/samsung-galaxy-star-s5282/p/itmdh494wzhsfmnp?pid=MOBDH48MF4ZCAFWP&ref=9f2b0010-9ade-434b-9328-ca20a396b7a0", :title => "Samsung Galaxy Star S5282 (Ceramic White)"}
+                                            "#{@title[fsn]}"
+                                        .pu-variants.fk-font-11
+                                        .pu-extra.fk-font-11
+                                        .pu-rating
+                                          .fk-stars-small{:title => "3.7 stars"}
+                                            .rating{:style => "width:74%;"}
+                                          (183 ratings)
+                                        .pu-price
+                                          .pu-border-top
+                                            .pu-final
+                                              %span.fk-font-17.fk-bold Rs. "#{@mrp[fsn]}"
+                                            %ul.pu-offers
+                                            .more-listing-options.fk-smallfont.tpadding5.bpadding5
+                                              %a.fk-underline{:href => "/ps/MOBDH48MF4ZCAFWP"} 8 Sellers
+                                              from
+                                              %span.fk-bold Rs "#{@fsp[fsn]}"
+                                        .pu-compare.pu-border-top
+                                          %input#MOBDH48MF4ZCAFWP.compare-checkbox{"data-uniqid" => "9f2b0010-9ade-434b-9328-ca20a396b7a0", :display_vertical => "Mobiles", :type => "checkbox", :vertical => "mobile", :vertical_url_map => "/mobiles"}/
+                                          %label.compare-label{:for => "#{fsn}"} Add to compare
                             .fclear
                         #products.4-per-row{"data-layout" => "grid", "data-storeid" => "search.flipkart.com"}
                         #show-more-results.dont-show

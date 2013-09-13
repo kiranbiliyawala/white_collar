@@ -13,11 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 8) do
 
-  create_table "abcd", :id => false, :force => true do |t|
-    t.string "occupation", :limit => 100
-    t.string "productid",  :limit => 20
-  end
-
   create_table "book_data_dumps", :force => true do |t|
     t.string "fsn"
     t.string "title"

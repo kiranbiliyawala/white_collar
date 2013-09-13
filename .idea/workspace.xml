@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="367377dc-6396-4edd-a885-f1716575de1f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/layouts.rb" afterPath="$PROJECT_DIR$/app/controllers/layouts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="white_collar.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="367377dc-6396-4edd-a885-f1716575de1f" time="1379005953607" ignored="false" />
     <file path="/white_collar.html.erb" changelist="367377dc-6396-4edd-a885-f1716575de1f" time="1379006056231" ignored="false" />
     <file path="/index.html" changelist="367377dc-6396-4edd-a885-f1716575de1f" time="1379006541261" ignored="false" />
-    <file path="/layouts.rb" changelist="367377dc-6396-4edd-a885-f1716575de1f" time="1379055680909" ignored="false" />
+    <file path="/layouts.rb" changelist="367377dc-6396-4edd-a885-f1716575de1f" time="1379060754529" ignored="false" />
     <file path="/a.dummy" changelist="367377dc-6396-4edd-a885-f1716575de1f" time="1379056290733" ignored="false" />
     <file path="/white_collar.haml" changelist="367377dc-6396-4edd-a885-f1716575de1f" time="1379008025461" ignored="false" />
-    <file path="/application.haml" changelist="367377dc-6396-4edd-a885-f1716575de1f" time="1379056389560" ignored="false" />
+    <file path="/application.haml" changelist="367377dc-6396-4edd-a885-f1716575de1f" time="1379060649314" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="10" selection-start="4119" selection-end="4119" vertical-scroll-proportion="-6.9">
+            <state line="2755" column="65" selection-start="289588" selection-end="289604" vertical-scroll-proportion="0.6122449">
               <folding />
             </state>
           </provider>
@@ -45,7 +46,7 @@
       <file leaf-file-name="users.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="34" selection-start="1881" selection-end="1881" vertical-scroll-proportion="4.0">
+            <state line="102" column="76" selection-start="2716" selection-end="2788" vertical-scroll-proportion="-11.576923">
               <folding />
             </state>
           </provider>
@@ -78,10 +79,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.77893174">
+            <state line="35" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,7 +91,7 @@
       <file leaf-file-name="Gemfile.lock" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile.lock">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="11" selection-start="2658" selection-end="2658" vertical-scroll-proportion="-62.884617">
+            <state line="109" column="11" selection-start="2658" selection-end="2658" vertical-scroll-proportion="-23.76923">
               <folding />
             </state>
           </provider>
@@ -105,19 +106,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="linked_in_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/linked_in_helper.rb">
+      <file leaf-file-name="layouts.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/layouts.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="6" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
+            <state line="69" column="40" selection-start="2533" selection-end="2544" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layouts.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/layouts.rb">
+      <file leaf-file-name="book_data_dump.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/book_data_dump.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="11" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.0">
+            <state line="0" column="18" selection-start="6" selection-end="18" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,8 +153,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/test.haml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/Gemfile.lock" />
-        <option value="$PROJECT_DIR$/app/controllers/layouts.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/layouts.rb" />
       </list>
     </option>
   </component>
@@ -284,6 +285,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="white_collar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="white_collar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -581,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="34" selection-start="1881" selection-end="1881" vertical-scroll-proportion="4.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/test.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3179" column="51" selection-start="311451" selection-end="311451" vertical-scroll-proportion="-10.375">
@@ -595,30 +607,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/layouts.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="11" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="10" selection-start="4119" selection-end="4119" vertical-scroll-proportion="-6.9">
+        <state line="35" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="11" selection-start="2658" selection-end="2658" vertical-scroll-proportion="-62.884617">
+        <state line="109" column="11" selection-start="2658" selection-end="2658" vertical-scroll-proportion="-23.76923">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.77893174">
+        <state line="102" column="76" selection-start="2716" selection-end="2788" vertical-scroll-proportion="-11.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/book_data_dump.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="18" selection-start="6" selection-end="18" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/layouts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="40" selection-start="2533" selection-end="2544" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2755" column="65" selection-start="289588" selection-end="289604" vertical-scroll-proportion="0.6122449">
           <folding />
         </state>
       </provider>
